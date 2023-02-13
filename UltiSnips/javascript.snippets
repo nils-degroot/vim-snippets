@@ -162,22 +162,22 @@ endsnippet
 snippet de
 debugger`!p snip.rv = semi(snip)`
 endsnippet
-snippet cl "console.log"
+snippet log "console.log"
 console.log(${0})`!p snip.rv = semi(snip)`
 endsnippet
-snippet cd "console.debug"
+snippet debug "console.debug"
 console.debug(${0})`!p snip.rv = semi(snip)`
 endsnippet
-snippet ce "console.error"
+snippet error "console.error"
 console.error(${0})`!p snip.rv = semi(snip)`
 endsnippet
-snippet cw "console.warn"
+snippet warm "console.warn"
 console.warn(${0})`!p snip.rv = semi(snip)`
 endsnippet
-snippet ci "console.info"
+snippet info "console.info"
 console.info(${0})`!p snip.rv = semi(snip)`
 endsnippet
-snippet ct "console.trace"
+snippet trace "console.trace"
 console.trace(${0:label})`!p snip.rv = semi(snip)`
 endsnippet
 snippet ctime "console.time ... console.timeEnd"
@@ -220,6 +220,18 @@ console.table(${1:"${2:value}"})`!p snip.rv = semi(snip)`
 endsnippet
 snippet clstr "console.log stringified"
 console.log(JSON.stringify(${0}, null, 2))`!p snip.rv = semi(snip)`
+endsnippet
+
+snippet it "jest test"
+it("should ${1: name}", () => {
+	${0}
+});
+endsnippet
+
+snippet descr "jest description"
+describe("${1:name}", () => {
+	${0}
+});
 endsnippet
 
 # vim:ft=snippets:
